@@ -8,6 +8,20 @@
     --main-text-color: whitesmoke;
 }
 
+/*scrollbar styles*/
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--main-accent);
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #6465b4;
+  }
+
 html, body{
     margin: 0;
     box-sizing: border-box;
@@ -102,3 +116,14 @@ html, body{
     color: var(--main-contrast);
     text-shadow: var(--main-light-color) .5px .5px;
 }
+
+.about-wrapper{
+    position: relative;
+}
+.about-wrapper .svg-wrapper{
+    position: absolute;
+    top:0; 
+    right:0; 
+    width:100%;
+    height:auto;
+ }
