@@ -1,0 +1,63 @@
+:root{
+    --main-bkg-color: #25283D;
+    --main-bkg-dark: #202124;
+    --main-accent: #7B7DE0;
+    --main-contrast: #FF674D;
+    --main-contrast-compliment: #D57A66;
+    --main-light-color: #F1ECCE;
+}
+
+html, body{
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--main-bkg-color);
+    line-height: 1.75;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.intro-wrapper{
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.intro-card{
+    height: 50%;
+    background-color: var(--main-bkg-dark) ;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    color: whitesmoke;
+    padding: 1em;
+    border-radius: 15px;
+    box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072);
+}
+
+.intro-card .card-photo{
+    height: 10em;
+    width: 10em;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    border-radius: 100%;
+
+    background-image: url(../images/IMG_5619.JPG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.intro-text{
+    text-align: center;
+    color: var(--main-accent);
+}
+.intro-text span{
+    color: var(--main-contrast);
+    text-shadow: var(--main-light-color) .5px .5px;
+}
