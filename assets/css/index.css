@@ -5,6 +5,7 @@
     --main-contrast: #FF674D;
     --main-contrast-compliment: #D57A66;
     --main-light-color: #F1ECCE;
+    --main-text-color: whitesmoke;
 }
 
 html, body{
@@ -13,6 +14,7 @@ html, body{
     background-color: var(--main-bkg-color);
     line-height: 1.75;
     font-family: 'Josefin Sans', sans-serif;
+    color: var(--main-text-color);
 }
 
 .intro-wrapper{
@@ -23,13 +25,20 @@ html, body{
     flex-direction: column;
 }
 
+.intro-beginning{
+    color: gray;
+}
+.intro-beginning span{
+    color: var(--main-light-color);
+}
+
 .intro-card{
     height: 50%;
     background-color: var(--main-bkg-dark) ;
     display: flex;
     flex-direction: row;
     position: relative;
-    color: whitesmoke;
+    color: var(--main-text-color);
     padding: 1em;
     border-radius: 15px;
     box-shadow:
@@ -37,13 +46,22 @@ html, body{
   0 6.7px 5.3px rgba(0, 0, 0, 0.048),
   0 12.5px 10px rgba(0, 0, 0, 0.06),
   0 22.3px 17.9px rgba(0, 0, 0, 0.072);
+  column-gap: 1em;
 }
 
-.intro-card .card-photo{
-    height: 10em;
-    width: 10em;
+.intro-card .left-col{
     margin-top: auto;
     margin-bottom: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 1em;
+}
+
+.intro-card .left-col .card-photo{
+    height: 12em;
+    width: 12em;
+   
 
     border-radius: 100%;
 
@@ -51,6 +69,29 @@ html, body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.intro-card .left-col .name{
+
+}
+.intro-card .middle-col{
+    display: flex;
+    flex-direction: column;
+}
+.intro-card .middle-col .graphic{
+    background: #151618;
+    width: 20em;
+    height: 50%;
+    border-radius: 5px;
+}
+.intro-card .middle-col ul{
+    list-style: circle;
+    margin-top: .2em;
+    margin-bottom: .2em;
+}
+.intro-card .middle-col ul h3{
+    margin-top: .5em;
+    margin-bottom: .5em;
 }
 
 .intro-text{
